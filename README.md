@@ -19,7 +19,6 @@ As a user I want the details of the film to be displayed in a clear and concise 
 As a user I want the details of the film to include the title of the film, the original title of the film in Japanese, the film poster, the director, release date, runtime, rating and description of the film.
 
 MVP Goals
-
 Creating a react app that has all of the react dependencies installed
 a. React router
 b. Npm install
@@ -47,7 +46,8 @@ e. Release date
 f. Run time
 g. Rating
 h. Film description
-Stretch Goals
 
+
+Stretch Goals
 A form where users can rate the movie
 A form where users can write a review for the movie/any comments
