@@ -1,14 +1,20 @@
 import './App.css';
 import { Route, Routes, Link } from 'react-router-dom';
 import Header from './components/Header'
-import Homepage from './components/Homepage'
+import HomePage from './components/HomePage'
 import { BrowserRouter as Router } from 'react-router-dom';
+import FilmDetails from './components/FilmDetails'
+import FilmCard from './components/FilmCard';
 
 function App() {
   return (
     <div className="App">
-    
-
+      <Header />
+    {/* <Routes>
+      <Route path="/studio-ghibli" element={ <HomePage />}/>
+      <Route path="/FilmDetails" element={<FilmDetails />}/>
+    </Routes> */}
+    <FilmCard />
     </div>
   );
 }
