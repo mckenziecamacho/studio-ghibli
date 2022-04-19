@@ -9,6 +9,7 @@ import { useState, useEffect, Component } from 'react';
 //         const url = `${studioURL}${id}.json`
 //     })
 // }
+
 // class FilmCard extends Component {
 //     constructor(props){
 //         super(props)
@@ -33,7 +34,7 @@ import { useState, useEffect, Component } from 'react';
 //         .then(json => {
 //             this.setState({
 //                 isLoaded: true,
-//                 items: [],
+//                 items: json,
 //             })
 //         });
 
@@ -72,28 +73,13 @@ import { useState, useEffect, Component } from 'react';
 
 
 
-// fetch('https://ghibliapi.herokuapp.com/films')
-// .then(res => {console.log(res.json())
-// .then(data =>console.log(data))
 
 class FilmCard extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             loading: true,
-                // filmID: [],
-                title: [],
-                // originalTitle: [],
-                // romanizedTitle: [],
-                // director: [],
-                // image: [],
-                // banner: [],
-                // producer: [],
-                // release: [],
-                // runTime: [],
-                // rtScore: [],
-                // description: [],
-
+            items: [],
             
         }
     }
@@ -105,19 +91,38 @@ class FilmCard extends Component {
         const response = await fetch(url)
         const data = await response.json();
         // const filmData = response.map((e) => {})
-        console.log(data);
+       
+        this.setState({items: data})
     }
-    handleChange = (e) =>{
-        this.setState({
-            [e.target.data]: e.target.value
-        })
-    }
+    
 
     render(){
         return(
         <div>
-            {this.state.loading ? <div>loading...</div> : <div>{'name'}</div>}
-        </div>)
+            {this.state.loading ? <div>loading...</div> : <div>{'title'}</div>}
+            {this.state.items ? this.state.items.map(film => {
+                console.log(film.title)
+                return(
+                    <div>
+                        <p>{film.title}</p>
+                        <p>{film.originalTitle}</p>
+                        <p>{film.romanizedTitle}</p>
+                        <p>{film.director}</p>
+                        <p>{film.image}</p>
+                        <p>{film.banner}</p>
+                        <p>{film.producer}</p>
+                        <p>{film.release}</p>
+                        <p>{film.runTime}</p>
+                        <p>{film.rtScore}</p>
+                        <p>{film.description}</p>
+                    </div>
+                )
+            }):'no information yet'}
+            
+        </div>
+        
+        
+        )
     }
 
 
