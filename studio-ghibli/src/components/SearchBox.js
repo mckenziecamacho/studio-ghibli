@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 
+
 const SearchBox = () =>{
 const [searchInput, setSearchInput] = useState("");
 const filmTitles = [
@@ -31,10 +32,12 @@ const filmTitles = [
 const handleChange = (e) =>{
     e.preventDefault();
     setSearchInput(e.target.value);
+    
 };
 if (searchInput.length > 0){
-    filmTitles.filter((filmTitles) =>{
-        return( filmTitles.name.match(searchInput)
+    filmTitles.filter((title) =>{
+        return(title.name.match(searchInput)
+        
     )});
 }
 return <div className="input-form">
@@ -42,7 +45,8 @@ return <div className="input-form">
             placeholder="type film title here" 
             onChange={handleChange} 
             value={searchInput}/>
-            <button type="submit" onClick={() => this.handleChange}>click here :D</button>      
+            <button type="submit" onChange={e => setSearchInput(e.target.value)}>click here :D</button>      
+            
         </div>
 
 

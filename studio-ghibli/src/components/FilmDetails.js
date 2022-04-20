@@ -10,14 +10,10 @@ class FilmDetails extends Component {
         }
     }
 
-
-
     async componentDidMount(){
         const url = 'https://ghibliapi.herokuapp.com/films';
         const response = await fetch(url)
         const data = await response.json();
-        // const filmData = response.map((e) => {})
-       
         this.setState({items: data})
     }
     
@@ -56,3 +52,4 @@ class FilmDetails extends Component {
 
 }
 export default FilmDetails;
+
