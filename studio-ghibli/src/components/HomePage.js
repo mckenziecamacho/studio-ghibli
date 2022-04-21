@@ -7,6 +7,7 @@ import items from "./FilmDetails"
 import { Link } from 'react-router-dom';
 
 
+
 const HomePage = (props) =>{
     console.log(props.data)
    return(
@@ -14,9 +15,8 @@ const HomePage = (props) =>{
            {
                props.data.map(film =>{
                    return(
-                       <div>
-                           <img src={film.image}/>
-                           
+                       <div className="film-images">
+                           <Link to={"/film-details/" + film.id}><img src={film.image} height={300}/></Link>
                        </div>
                    )
                })

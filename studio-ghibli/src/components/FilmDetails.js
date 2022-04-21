@@ -1,54 +1,43 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
+import {useParams} from "react-router-dom";
+import { useState } from 'react';
 
-class FilmDetails extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            loading: true,
-            items: [],
-            
-        }
-    }
+const url = "https://ghibliapi.herokuapp.com/films/"
 
-    async componentDidMount(){
-        const url = 'https://ghibliapi.herokuapp.com/films';
-        const response = await fetch(url)
-        const data = await response.json();
-        this.setState({items: data})
-    }
+function FilmDetails() {
+    const [film, setFilm] = useState();
+    const filmId = useParams().id
+    console.log(filmId)
+    console.log(url)
+    console.log(url + filmId)
+    useEffect(() =>{
+        fetch(url + filmId)
+            .then((res) => res.json())
+            .then((res) => {
+                setFilm(res)
+                console.log(res)
+    })
+    .catch((error =>{
+        console.error(error);
+    })
+    )
+    },[])
+
+  return(
+      <div>
     
-
-    render(){
-        return(
-        <div>
-            {this.state.loading ? <div>loading...</div> : <div>{'title'}</div>}
-            {this.state.items ? this.state.items.map(film => {
-                console.log(film.title)
-                return(
-                    <div>
-                        <p>{film.title}</p>
-                        <p>{film.originalTitle}</p>
-                        <p>{film.romanizedTitle}</p>
-                        <p>{film.director}</p>
-                        <p>{film.image}</p>
-                        <p>{film.banner}</p>
-                        <p>{film.producer}</p>
-                        <p>{film.release}</p>
-                        <p>{film.runTime}</p>
-                        <p>{film.rtScore}</p>
-                        <p>{film.description}</p>
-                    </div>
-                )
-            }):'no information yet'}
-            
-        </div>
-        
-        
-        )
-    }
-
-
-
+            <div className='title'><b>Title:</b>{film? film.title : ""}</div>
+            <div className='ogTitle'><b>Original Title:</b>{film? film.original_title : ""}</div>
+            <div className='ogTitleRomanised'><b>Original Title Romanised:</b>{film? film.original_title_romanised : ""}</div>
+            <div className='director'><b>Director:</b>{film? film.director : ""}</div>
+            <div className='producer'><b>Producer:</b>{film? film.producer : ""}</div>
+            <div className='releaseDate'><b>Release Date:</b>{film? film.release_date : ""}</div>
+            <div className='rtScore'><b>Rotten Tomatoes Score:</b>{film? film.rt_score : ""}</div>
+            <div className='runTime'><b>Run Time:</b>{film? film.running_time: ""}</div>
+            <div className='description'><b>Description:</b>{film? film.description : ""}</div>
+          
+      </div>
+  )
 
 }
 export default FilmDetails;

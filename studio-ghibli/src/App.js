@@ -36,15 +36,15 @@ class App extends Component {
           <SearchBox/>
           {/* <SearchBar/> */}
           {/* <FilmDetails/> */}
-          <HomePage data={this.state.items}/>
+        
           
       
         
         <Routes>
-          {/* <Route path="/" element={ <HomePage /> }/> */}
-          <Route path="/film-details" element={ <FilmDetails /> }/>
+          <Route path="/" element={ <HomePage data={this.state.items}/> }/>
+          <Route path="/film-details/:id" element={ <FilmDetails /> }/>
           <Route path="/about" element={ <About /> }/>
-          {/* <Route path="/home" element={ <HomePage /> }/> */}
+          <Route path="/home" element={ <HomePage data={this.state.items}/> }/>
         </Routes>
         </div>
       );
