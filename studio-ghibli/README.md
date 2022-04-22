@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Studio Ghibli Website
+Project Choice (Tell us which project you're doing!)
+I will be using react and react router to make a Studio Ghibli Film Website.
+API link: https://ghibliapi.herokuapp.com/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Description
+My project will be a Studio Ghibli react website that showcases the Studio Ghibli filmography using the information from a Studio Ghibli API. The website will include 6 components. A header component that contains the navigation for the website, a homepage component which displays the homepage along with the search bar and button components to search for a Studio Ghibli film. There will also be a film card component which displays the film picture and contains the film info component so that when the image is clicked the user will be taken to a new page that contains the details of the film they selected.
 
-## Available Scripts
+Wire Frames
+![Wireframe - In-Progress]
+(Screen Shot 2022-04-15 at 3 23 39 PM)
 
-In the project directory, you can run:
 
-### `npm start`
+User Stories
+As a user I want to be able to effortlessly see the information displayed on the Studio Ghibli Website.
+As a user I want a navigation bar that redirects me to the homepage.
+As a user I want a clear UI displayed so that I know where to search for a film title.
+As a user I want to be able to see the images of the film poster displayed and clickable.
+As a user I want a search-box that enables me to type a Studio Ghibli film within it and search for that film by clicking a clickable button.
+As a user I want to be able to click on the image of the film’s poster (that also displays the film’s title) which leads to the details of the film.
+As a user I want the details of the film to be displayed in a clear and concise way.
+As a user I want the details of the film to include the title of the film, the original title of the film in Japanese, the film poster, the director, release date, runtime, rating and description of the film.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+MVP Goals
+Creating a react app that has all of the react dependencies installed
+a. React router
+b. Npm install
+c. Connected API
+6 components
+a. That include:
+i. A homepage (called in app.js)
+ii. Navigation bar (called in homepage)
+iii. Header (called in app.js)
+iv. Search box and button (called in the homepage.js)
+v. Film card (called in homepage.js)
+(that displays the film posters along with the title of the film)
+vi. Film details (called in filmcard.js)
+(that displays the film information)
+A home button that redirects the user back to the homepage.
+A home-page that contains the navigation bar at the top, a header below the navigation bar that reads Studio Ghibli Films.
+A search box with a clickable button beside it below the header
+Studio Ghibli API connected and functional that enables the film posters to render below the search box and button components
+Clickable film poster image that redirects the user to the page displaying the details of the film:
+a. Title
+b. Original title
+c. Film poster
+d. Director
+e. Release date
+f. Run time
+g. Rating
+h. Film description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Stretch Goals
+A form where users can rate the movie
+A form where users can write a review for the movie/any comments

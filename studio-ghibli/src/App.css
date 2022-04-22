@@ -44,11 +44,12 @@ body{
 .banner{
   height: auto;
   width: fit-content;
+  display: flex;
+  justify-content: center;
 }
 .film-details{
   background-image: url("https://w0.peakpx.com/wallpaper/908/604/HD-wallpaper-studio-ghibli-anime-l-howl-logo-studio-ghibli-logo-totoro.jpg");
   height: fit-content;
-  /* width: 85%; */
 }
 
 .search-box{
