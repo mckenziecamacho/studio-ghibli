@@ -1,10 +1,85 @@
-.header{
-  padding-top: 50px;
-  padding-bottom: 50px;
-
+body{
+  background: url("https://wallpaperaccess.com/full/42614.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 }
 
 .film-images{
+/* film cards */
+display: grid;
+grid-row-end: span;
+grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+grid-gap: 1rem;
+float: left;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.search-box{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about{
+  /* display: flex;
+  flex-direction: row-reverse;
+  padding-inline-end: 10px;  */
+}
+
+.about-page{
+  margin: auto;
+  width: 50%;
+  border: 3px solid saddlebrown;
+  padding: 10px;
+  background-color: gray;
+}
+
+.App{
+  /* background-image: url("https://lwlies.com/wp-content/uploads/2020/09/ponyo-900x0-c-default.jpg"); */
+  /* background: url("https://wallpaperaccess.com/full/42614.jpg") no-repeat center center fixed;  */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   
+}
+
+.header{
+  background: url("") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hp-header{
+  font-size: 20px;
+  text-align: center;
+}
+
+.film-details{
+  margin: auto;
+  width: 50%;
+  border: 3px solid saddlebrown;
+  padding: 10px;
+  background-color: gray;
+  /* background-image: url("https://i.pinimg.com/originals/ac/46/79/ac4679a4e0fed12608404efacb8e304d.png"); */
+  
+}
+.film-details{
+  background-image: url("https://media3.giphy.com/media/xULW8yNXpXJo0u4iLm/giphy.gif");
+}
+.film-details a {
+  background-image: url("https://pa1.narvii.com/6925/c3873cbbed62203e71777d4a38bb104ab0106dd9r1-540-292_hq.gif");
 }

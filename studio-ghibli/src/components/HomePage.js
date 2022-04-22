@@ -12,35 +12,20 @@ const HomePage = (props) =>{
     console.log(props.data)
    return(
        <div>
+           <div className="hp-header">
+               <h1>
+                   Studio Ghibli Films
+               </h1>
+           </div>
            {
                props.data.map(film =>{
                    return(
                        <div className="film-images">
-                           <Link to={"/film-details/" + film.id}><img src={film.image} height={300}/></Link>
+                           <Link to={"/film-details/" + film.id}><img src={film.image} height={300}/>{}</Link>
                        </div>
                    )
                })
            }
-
-
-
-           {/* this.state.items.map(film => {
-                console.log(film.title)
-                return(
-                    <div>
-                        <p>{film.title}</p>
-                        <p>{film.originalTitle}</p>
-                        <p>{film.romanizedTitle}</p>
-                        <p>{film.director}</p>
-                        <p>{film.image}</p>
-                        <p>{film.banner}</p>
-                        <p>{film.producer}</p>
-                        <p>{film.release}</p>
-                        <p>{film.runTime}</p>
-                        <p>{film.rtScore}</p>
-                        <p>{film.description}</p>
-                    </div>
-                ) */}
        </div>
    )
     

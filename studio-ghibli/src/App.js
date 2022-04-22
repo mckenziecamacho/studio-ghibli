@@ -2,12 +2,9 @@ import './App.css';
 import { Route, Routes, Link } from 'react-router-dom';
 import Header from './components/Header'
 import HomePage from './components/HomePage'
-import { BrowserRouter as Router } from 'react-router-dom';
 import FilmDetails from './components/FilmDetails'
-// import FilmCard from './components/FilmCard';
 import About from './components/About';
 import SearchBox from './components/SearchBox';
-// import SearchBar from './components/SearchBar';
 import React, {Component} from 'react';
 
 
@@ -28,18 +25,12 @@ class App extends Component {
         this.setState({items: data})
     }
     render(){
-    
+  
       return (
         <div className="App">
           <Header />
-          {/* <FilmCard/> */}
-          <SearchBox/>
-          {/* <SearchBar/> */}
-          {/* <FilmDetails/> */}
-        
+          {/* <SearchBox data={this.state.items}/> */}
           
-      
-        
         <Routes>
           <Route path="/" element={ <HomePage data={this.state.items}/> }/>
           <Route path="/film-details/:id" element={ <FilmDetails /> }/>

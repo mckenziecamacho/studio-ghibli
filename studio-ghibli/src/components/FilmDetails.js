@@ -24,8 +24,8 @@ function FilmDetails() {
     },[])
 
   return(
-      <div>
-    
+      <div className='film-details'>
+            <div className='banner'>{film? film.movie_banner : ""}</div>
             <div className='title'><b>Title:</b>{film? film.title : ""}</div>
             <div className='ogTitle'><b>Original Title:</b>{film? film.original_title : ""}</div>
             <div className='ogTitleRomanised'><b>Original Title Romanised:</b>{film? film.original_title_romanised : ""}</div>
@@ -35,7 +35,6 @@ function FilmDetails() {
             <div className='rtScore'><b>Rotten Tomatoes Score:</b>{film? film.rt_score : ""}</div>
             <div className='runTime'><b>Run Time:</b>{film? film.running_time: ""}</div>
             <div className='description'><b>Description:</b>{film? film.description : ""}</div>
-          
       </div>
   )
 
