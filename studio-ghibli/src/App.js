@@ -30,7 +30,6 @@ class App extends Component {
         <div className="App">
           <Header />
           
-          
         <Routes>
           <Route path="/" element={ <HomePage data={this.state.items}/> }/>
           <Route path="/film-details/:id" element={ <FilmDetails /> }/>
@@ -38,6 +37,7 @@ class App extends Component {
           <Route path="/home" element={ <HomePage data={this.state.items}/> }/>
           <Route path="/search" element={<SearchBox data={this.state.items}/>}/>
         </Routes>
+
         </div>
       );
 

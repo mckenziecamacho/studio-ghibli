@@ -7,15 +7,11 @@ body{
   
 }
 
-
-
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 
 .about-page{
   margin: auto;
@@ -28,23 +24,9 @@ body{
 }
 
 .App{
-  /* background-image: url("https://lwlies.com/wp-content/uploads/2020/09/ponyo-900x0-c-default.jpg"); */
-  /* background: url("https://wallpaperaccess.com/full/42614.jpg") no-repeat center center fixed;  */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
-  
+  color: rgb(242, 255, 240);
 }
 
-/* .header{
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-} */
 
 .hp-header{
   font-size: 20px;
@@ -52,25 +34,26 @@ body{
 }
 
 .film-details{
-  margin: auto;
-  width: 50%;
   border: 3px solid saddlebrown;
   padding: 10px;
   background-color: gray;
+  margin: auto;
+  width: 95vh;
+}
+
+.banner{
+  height: auto;
+  width: fit-content;
 }
 .film-details{
-  /* background-image: url("https://www.socwall.com/images/wallpapers/32-1600x1200.jpg"); */
   background-image: url("https://w0.peakpx.com/wallpaper/908/604/HD-wallpaper-studio-ghibli-anime-l-howl-logo-studio-ghibli-logo-totoro.jpg");
+  height: fit-content;
+  /* width: 85%; */
 }
 
 .search-box{
   display: grid;
-  float: left;
 } 
-/* .search{
-  display: flex;
-  align-items: flex-end;
-}  */
 
 .film-images{
   /* film cards */
@@ -90,4 +73,34 @@ body{
 .input-box{
   text-align: center;
   margin: 30px;
+  padding-top: 5px;
 }  
+
+.navbar{
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.new{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  font-size: 30px; 
+  color:black; 
+
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+  text-indent: 4em;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
