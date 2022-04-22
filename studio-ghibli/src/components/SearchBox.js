@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import FilmCard from "./FilmCard";
 
 
 
@@ -58,7 +59,7 @@ function SearchBox(props){
     const [searchTerm, setSearchTerm] = useState('');
     console.log(props.data)
     return(
-        <div className="search-box">
+        <div className="search">
             <input type="text" placeholder="Search..." onChange={event => {setSearchTerm(event.target.value)}}/>
             {props.data.filter((val) => {
                 if (searchTerm == ''){
@@ -67,10 +68,9 @@ function SearchBox(props){
                     return val
                 }
             }).map((val, key) =>{
+                console.log(val)
                 return(
-                    <div className="">
-                        <p>{val.title}</p>
-                    </div>
+                    <FilmCard film={val}/>
                 )
             })}
         </div>

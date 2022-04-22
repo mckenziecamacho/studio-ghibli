@@ -23,20 +23,20 @@ function FilmDetails() {
     )
     },[])
 
-  return(
-      <div className='film-details'>
-            <div className='banner'>{film? film.movie_banner : ""}</div>
-            <div className='title'><b>Title: </b>{film? film.title : ""}</div>
-            <div className='ogTitle'><b>Original Title: </b>{film? film.original_title : ""}</div>
-            <div className='ogTitleRomanized'><b>Original Title Romanized: </b>{film? film.original_title_romanised : ""}</div>
-            <div className='director'><b>Director: </b>{film? film.director : ""}</div>
-            <div className='producer'><b>Producer: </b>{film? film.producer : ""}</div>
-            <div className='releaseDate'><b>Release Date: </b>{film? film.release_date : ""}</div>
-            <div className='rtScore'><b>Rotten Tomatoes Score: </b>{film? film.rt_score : ""}</div>
-            <div className='runTime'><b>Run Time: </b>{film? film.running_time: ""}</div>
-            <div className='description'><b>Synopsis: </b>{film? film.description : ""}</div>
-      </div>
-  )
+    return(
+        <div className='film-details'>
+              <div className='banner'><img src={film? film.movie_banner : ""} height={400}/></div>
+              <div className='title'><b>Title: </b>{film? film.title : ""}</div>
+              <div className='ogTitle'><b>Original Title: </b>{film? film.original_title : ""}</div>
+              <div className='ogTitleRomanized'><b>Original Title Romanized: </b>{film? film.original_title_romanised : ""}</div>
+              <div className='director'><b>Director: </b>{film? film.director : ""}</div>
+              <div className='producer'><b>Producer: </b>{film? film.producer : ""}</div>
+              <div className='releaseDate'><b>Release Date: </b>{film? film.release_date : ""}</div>
+              <div className='rtScore'><b>Rotten Tomatoes Score: </b>{film? film.rt_score : ""}</div>
+              <div className='runTime'><b>Run Time: </b>{film? film.running_time: ""}</div>
+              <div className='description'><b>Synopsis: </b>{film? film.description : ""}</div>
+        </div>
+    )
 
 }
 export default FilmDetails;

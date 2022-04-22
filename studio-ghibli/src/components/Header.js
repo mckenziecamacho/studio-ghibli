@@ -14,6 +14,11 @@ const Header = () => {
                     <Link to='/about'>
                      <h1>About</h1>
                  </Link>
+                 <div className='search-box'>
+                    <Link to='/search'>
+                        <h1>Search</h1>
+                    </Link>
+                 </div>
                  </div>
              </nav>
         </header>
