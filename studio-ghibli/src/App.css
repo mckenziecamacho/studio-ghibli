@@ -39,10 +39,13 @@ float: left;
 
 .about-page{
   margin: auto;
-  width: 50%;
+  width: 40%;
   border: 3px solid saddlebrown;
   padding: 10px;
   background-color: gray;
+  text-align: center;
+  background-image: url("https://c.tenor.com/w8HIP86gckQAAAAd/mononoke-kodama.gif");
+
 }
 
 .App{
@@ -52,6 +55,7 @@ float: left;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color: white;
   
 }
 
@@ -61,6 +65,7 @@ float: left;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
 }
 
 .hp-header{
@@ -74,12 +79,9 @@ float: left;
   border: 3px solid saddlebrown;
   padding: 10px;
   background-color: gray;
-  /* background-image: url("https://i.pinimg.com/originals/ac/46/79/ac4679a4e0fed12608404efacb8e304d.png"); */
-  
 }
 .film-details{
-  background-image: url("https://media3.giphy.com/media/xULW8yNXpXJo0u4iLm/giphy.gif");
+  /* background-image: url("https://www.socwall.com/images/wallpapers/32-1600x1200.jpg"); */
+  background-image: url("https://w0.peakpx.com/wallpaper/908/604/HD-wallpaper-studio-ghibli-anime-l-howl-logo-studio-ghibli-logo-totoro.jpg");
 }
-.film-details a {
-  background-image: url("https://pa1.narvii.com/6925/c3873cbbed62203e71777d4a38bb104ab0106dd9r1-540-292_hq.gif");
-}
+
