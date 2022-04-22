@@ -6,10 +6,10 @@ API link: https://ghibliapi.herokuapp.com/
 Project Description
 My project will be a Studio Ghibli react website that showcases the Studio Ghibli filmography using the information from a Studio Ghibli API. The website will include 6 components. A header component that contains the navigation for the website, a homepage component which displays the homepage along with the search bar and button components to search for a Studio Ghibli film. There will also be a film card component which displays the film picture and contains the film info component so that when the image is clicked the user will be taken to a new page that contains the details of the film they selected.
 
-Wire Frames
-![Wireframe - In-Progress]
-(Screen Shot 2022-04-15 at 3 23 39 PM)
+Technologies Used: Git, Github, Github Pages, HTML, CSS, JavaScript, React, React Router
 
+Wire Frames
+![Wireframe - In-Progress](img/Screen Shot 2022-04-15 at 3 23 39 PM)
 
 User Stories
 As a user I want to be able to effortlessly see the information displayed on the Studio Ghibli Website.
