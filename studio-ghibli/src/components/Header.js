@@ -5,7 +5,7 @@ import HomePage from './HomePage';
 const Header = () => {
     return(
     <div>
-        <header className='header'>
+    <header className='header'>
             <nav className='navbar'>
                 <Link to="/home">
                 <h1>Home</h1>

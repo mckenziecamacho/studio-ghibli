@@ -25,7 +25,7 @@ function FilmDetails() {
 
     return(
         <div className='film-details'>
-              <div className='banner'><img src={film? film.movie_banner : ""} height={400}/></div>
+              <div className='banner'><img src={film? film.movie_banner : ""} height={405}/></div>
               <div className='title'><b>Title: </b>{film? film.title : ""}</div>
               <div className='ogTitle'><b>Original Title: </b>{film? film.original_title : ""}</div>
               <div className='ogTitleRomanized'><b>Original Title Romanized: </b>{film? film.original_title_romanised : ""}</div>

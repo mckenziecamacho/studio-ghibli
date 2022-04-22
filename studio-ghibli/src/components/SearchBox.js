@@ -60,7 +60,12 @@ function SearchBox(props){
     console.log(props.data)
     return(
         <div className="search">
+            <div className="search-header">
+                <h1>Studio Ghibli Films</h1>
+            </div>
+            <div className="input-box">
             <input type="text" placeholder="Search..." onChange={event => {setSearchTerm(event.target.value)}}/>
+            </div>
             {props.data.filter((val) => {
                 if (searchTerm == ''){
                     return val
